@@ -1,5 +1,6 @@
 body{
 	margin: 0px;
+	height: 100%;
 }
 .darkblue{
 	background-color: #00688B;
@@ -19,19 +20,25 @@ body{
 .container{
 	display: flex;
 	flex-wrap: wrap;
+	height: 100%;
+	width: 100%;
+}
+.con{
+	width: 100%;
 }
 .box{
 	width: 100%;
+	
 }
 @media screen and (min-width: 500px){
 	.darkblue{
 		width: 100%;
 	}
 	.blue{
-		width: 50%;
+		width: 100%;
 	}
 	.green{
-		width: 50%;
+		width: 100%;
 	}
 	.red{
 		width: 100%;
@@ -42,16 +49,13 @@ body{
 }
 @media screen and (min-width: 600px){
 	.darkblue{
-		width: 100%;
+		width: 50%;
 	}
-	.blue{
-		width:50%;
-	}
-	.green{
+	.con{
 		width: 50%;
 	}
 	.red{
-		width: 25%;
+		width: 100%;
 	}
 
 	.orange{
@@ -60,16 +64,16 @@ body{
 }
 @media screen and (min-width: 800px){
 	.darkblue{
-		width: 100%;
+		width: 25%;
+		order: 1;
 	}
-	.blue{
+	.con{
 		width: 50%;
-	}
-	.green{
-		width: 50%;
+
 	}
 	.red{
 		width: 25%;
+		order: -1;
 	}
 	
 	.orange{
